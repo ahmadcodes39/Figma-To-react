@@ -14,7 +14,7 @@ const MultiStepForm = () => {
       <Sidebar currentStep={step} />
 
       <div className="flex-1 flex flex-col justify-between p-6">
-        <div className="flex-1 max-w-3xl 2xl:max-w-5xl mx-auto w-full bg-white rounded-xl p-8 shadow-lg xl:mt-3 2xl:mt-10">
+        <div className="flex-1 max-w-3xl 2xl:max-w-5xl mx-auto w-full bg-white rounded-xl p-8 shadow-lg xl:mt-3 2xl:mt-6">
           <StepForm step={step} />
         </div>
 
