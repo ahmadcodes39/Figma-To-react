@@ -11,7 +11,7 @@ const Step4Card = ({ summaryData, total }) => {
           <div className="flex flex-col gap-4">
             <div className="flex justify-between flex-wrap">
               <section className="flex flex-col gap-1">
-                <p className="font-medium text-base sm:text-lg 2xl:text-xl">
+                <p className="font-medium text-base sm:text-lg 2xl:text-lg">
                   {item.title}
                 </p>
                 <p className="font-ubuntu underline text-[#4C3FF1] text-sm sm:text-base 2xl:text-lg">

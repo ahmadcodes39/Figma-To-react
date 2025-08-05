@@ -30,7 +30,7 @@ const Step2SelectPlan = () => {
         <SectionHeader
           heading="Select your plan"
           subHeading="You have the option of monthly or yearly billing."
-          headingClassName="text-lg sm:text-xl md:text-2xl 2xl:text-4xl"
+          headingClassName="text-lg sm:text-xl md:text-2xl 2xl:text-3xl"
           subHeadingClassName="text-sm sm:text-base md:text-lg 2xl:text-xl"
         />
 
@@ -48,7 +48,7 @@ const Step2SelectPlan = () => {
 
         <div className="flex justify-center items-center mt-5 sm:mt-6 2xl:mt-16">
           <div className="flex items-center gap-5 2xl:gap-8">
-            <p className="font-bold text-text_color text-sm sm:text-base 2xl:text-xl">
+            <p className="font-bold text-text_color text-sm sm:text-base 2xl:text-lg">
               Monthly
             </p>
             <input
@@ -56,7 +56,7 @@ const Step2SelectPlan = () => {
               className="toggle bg-white hover:bg-slate-400 [--tglbg:#032859] scale-90 2xl:scale-125"
               defaultChecked
             />
-            <p className="font-bold text-text_color text-sm sm:text-base 2xl:text-xl">
+            <p className="font-bold text-text_color text-sm sm:text-base 2xl:text-lg">
               Yearly
             </p>
           </div>

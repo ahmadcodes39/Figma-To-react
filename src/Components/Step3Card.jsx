@@ -11,7 +11,7 @@ const Step3Card = ({ heading, subHeading, amount }) => {
             className="checkbox checkbox-primary w-5 h-5 2xl:w-6 2xl:h-6"
           />
           <div className="flex flex-col">
-            <p className=" text-sm sm:text-lg 2xl:text-xl font-bold">
+            <p className=" text-sm sm:text-lg 2xl:text-lg font-bold">
               {heading}
             </p>
             <p className="text-sm sm:text-base 2xl:text-lg text-[#9397A2]">
