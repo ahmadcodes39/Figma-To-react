@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Sidebar from "./Common/SideBar";
 import FooterButtons from "./FooterButtons";
-import Step1YourInfo from "./Step1YourInfo";
-import StepForm from "./StepForm"
+import StepForm from "./StepForm";
+
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
 
@@ -10,19 +10,17 @@ const MultiStepForm = () => {
   const prevStep = () => setStep((prev) => prev - 1);
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen bg-white">
-  <Sidebar currentStep={step} />
-  
-  <div className="flex-1 flex flex-col p-4 md:p-6">
-    <div className="flex-1 overflow-y-auto">
-      <StepForm step={step} />
+    <div className="flex flex-col md:flex-row min-h-screen bg-[#EFF5FF] font-ubuntu">
+      <Sidebar currentStep={step} />
+
+      <div className="flex-1 flex flex-col justify-between p-6">
+        <div className="flex-1 max-w-3xl 2xl:max-w-5xl mx-auto w-full bg-white rounded-xl p-8 shadow-lg xl:mt-3 2xl:mt-16">
+          <StepForm step={step} />
+        </div>
+
+        <FooterButtons step={step} nextStep={nextStep} prevStep={prevStep} />
+      </div>
     </div>
-    
-    <FooterButtons step={step} nextStep={nextStep} prevStep={prevStep} />
-  </div>
-</div>
-
-
   );
 };
 

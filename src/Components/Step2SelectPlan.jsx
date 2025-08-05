@@ -8,49 +8,55 @@ const Step2SelectPlan = () => {
       icon: "step2_first.svg",
       heading: "Arcade",
       price: 9,
+      status: "2 months Free",
     },
     {
       icon: "step2_second.svg",
       heading: "Advanced",
       price: 12,
+      status: "2 months Free",
     },
     {
       icon: "step2_third.svg",
       heading: "Pro",
       price: 15,
+      status: "2 months Free",
     },
   ];
 
   return (
     <div className="flex justify-center items-start w-full">
-      <div className="w-full max-w-4xl bg-white sm:rounded-none sm:shadow-none rounded-xl shadow-xl px-6 py-8 sm:px-0 sm:py-0">
+      <div className="w-full max-w-4xl bg-white sm:rounded-none sm:shadow-none px-1 py-0 sm:px-0 sm:py-0 2xl:px-1 2xl:py-1">
         <SectionHeader
           heading="Select your plan"
           subHeading="You have the option of monthly or yearly billing."
+          headingClassName="text-lg sm:text-xl md:text-2xl 2xl:text-4xl"
+          subHeadingClassName="text-sm sm:text-base md:text-lg 2xl:text-xl"
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 2xl:gap-6 mt-6 2xl:mt-0">
           {data.map((item, index) => (
             <Step2Card
               key={index}
               icon={item.icon}
               heading={item.heading}
               price={item.price}
+              status={item.status}
             />
           ))}
         </div>
 
-        <div className="flex justify-center items-center mt-10">
-          <div className="flex items-center gap-5">
-            <p className="font-bold text-text_color text-sm sm:text-base">
+        <div className="flex justify-center items-center mt-5 sm:mt-6 2xl:mt-16">
+          <div className="flex items-center gap-5 2xl:gap-8">
+            <p className="font-bold text-text_color text-sm sm:text-base 2xl:text-xl">
               Monthly
             </p>
             <input
               type="checkbox"
-              className="toggle bg-white hover:bg-slate-400 [--tglbg:#032859]"
+              className="toggle bg-white hover:bg-slate-400 [--tglbg:#032859] scale-90 2xl:scale-125"
               defaultChecked
             />
-            <p className="font-bold text-text_color text-sm sm:text-base">
+            <p className="font-bold text-text_color text-sm sm:text-base 2xl:text-xl">
               Yearly
             </p>
           </div>

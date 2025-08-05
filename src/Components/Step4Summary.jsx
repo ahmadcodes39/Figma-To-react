@@ -20,14 +20,12 @@ const Step4Summary = () => {
     summaryData[0].addOns.reduce((sum, addon) => sum + addon.price, 0);
 
   return (
-    <div className="px-4 sm:p-0 w-full sm:rounded-none sm:shadow-none shadow-xl rounded-md">
-      <div className="flex flex-col justify-start items-start w-full max-w-4xl mx-auto">
-        <div className="flex flex-col items-start justify-start space-y-6 w-full">
-          <SectionHeader
-            heading="Finishing up"
-            subHeading="Double-check everything looks OK before confirming."
-          />
-        </div>
+    <div className="px-0 py-0 sm:px-0 w-full">
+      <div className="flex flex-col justify-start items-start w-full max-w-4xl 2xl:max-w-6xl mx-auto 2xl:px-1 2xl:py-1">
+        <SectionHeader
+          heading="Finishing up"
+          subHeading="Double-check everything looks OK before confirming."
+        />
         <Step4Card summaryData={summaryData} total={total} />
       </div>
     </div>

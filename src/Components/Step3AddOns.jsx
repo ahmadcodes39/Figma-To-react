@@ -22,13 +22,13 @@ const Step3AddOns = () => {
   ];
 
   return (
-    <div className="flex items-center justify-center px-4 sm:p-0 py-8 sm:shadow-none shadow-xl sm:rounded-none rounded-sm ">
-      <div className="flex flex-col w-full max-w-2xl">
+    <div className="flex items-center justify-center px-0 py-0 sm:shadow-none sm:rounded-none">
+      <div className="flex flex-col w-full max-w-2xl 2xl:max-w-5xl 2xl:px-1 2xl:py-1">
         <SectionHeader
           heading="Pick Add-ons"
           subHeading="Add-ons help enhance your gaming experience."
         />
-        <div className="mt-10 flex flex-col space-y-5 w-full mb-10">
+        <div className="2xl:mt-10 mt-3 flex flex-col space-y-5 w-full mb-3">
           {data.map((item, index) => (
             <Step3Card
               key={index}
