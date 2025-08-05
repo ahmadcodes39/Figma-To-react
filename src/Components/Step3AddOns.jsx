@@ -28,7 +28,7 @@ const Step3AddOns = () => {
           heading="Pick Add-ons"
           subHeading="Add-ons help enhance your gaming experience."
         />
-        <div className="2xl:mt-10 mt-3 flex flex-col space-y-5 w-full mb-3">
+        <div className="2xl:mt-10 mt-2 flex flex-col space-y-3 w-full mb-2">
           {data.map((item, index) => (
             <Step3Card
               key={index}

@@ -8,7 +8,7 @@ const Step3Card = ({ heading, subHeading, amount }) => {
           <input
             type="checkbox"
             defaultChecked
-            className="checkbox checkbox-primary w-5 h-5 2xl:w-6 2xl:h-6"
+            className="checkbox checkbox-primary w-5 h-5 2xl:w-5 2xl:h-5"
           />
           <div className="flex flex-col">
             <p className=" text-sm sm:text-lg 2xl:text-lg font-bold">
