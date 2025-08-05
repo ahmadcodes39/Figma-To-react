@@ -34,7 +34,7 @@ const Step2SelectPlan = () => {
           subHeadingClassName="text-sm sm:text-base md:text-lg 2xl:text-xl"
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 2xl:gap-6 mt-6 2xl:mt-0">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 2xl:gap-6 mt-6 2xl:mt-1">
           {data.map((item, index) => (
             <Step2Card
               key={index}
@@ -46,7 +46,7 @@ const Step2SelectPlan = () => {
           ))}
         </div>
 
-        <div className="flex justify-center items-center mt-5 sm:mt-6 2xl:mt-16">
+        <div className="flex justify-center items-center mt-5 sm:mt-6 2xl:mt-15">
           <div className="flex items-center gap-5 2xl:gap-8">
             <p className="font-bold text-text_color text-sm sm:text-base 2xl:text-lg">
               Monthly
