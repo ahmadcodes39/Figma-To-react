@@ -19,9 +19,10 @@ const Step2Card = ({ icon, heading, price, status }) => {
         <p className="text-xs sm:text-base 2xl:text-lg text-[#9397A2]">
           ${price}/mo
         </p>
-        <p className="hidden md:visible text-xs sm:text-base 2xl:text-lg font-medium text-[#032859]">
-          {status}
-        </p>
+       <p className="hidden md:block text-xs sm:text-base 2xl:text-lg font-medium text-[#032859]">
+  {status}
+</p>
+
       </section>
     </div>
   );
