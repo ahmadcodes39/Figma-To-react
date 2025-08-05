@@ -21,7 +21,7 @@ const Step4Summary = () => {
 
   return (
     <div className="px-0 py-0 sm:px-0 w-full">
-        <div className=" px-4 rounded-md sm:rounded-none py-4 sm:h-[100%] min-h-[70vh] shadow-md sm:shadow-none sm:py-0 sm:px-1 md:px-6 xl:px-6 2xl:px-10 sm:relative absolute sm:top-0 sm:left-0 sm:right-0 top-20 left-10 right-10 bg-white">
+        <div className=" px-4 rounded-md sm:rounded-none py-4 sm:h-[100%] min-h-[60vh] shadow-md sm:shadow-none sm:py-0 sm:px-1 md:px-6 xl:px-6 2xl:px-10 sm:relative absolute sm:top-0 sm:left-0 sm:right-0 top-20 left-10 right-10 bg-white">
 
         <SectionHeader
           heading="Finishing up"
